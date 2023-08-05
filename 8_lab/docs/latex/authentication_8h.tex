@@ -1,0 +1,68 @@
+\hypertarget{authentication_8h}{}\doxysection{Файл authentication.\+h}
+\label{authentication_8h}\index{authentication.h@{authentication.h}}
+
+
+Заголовочный файл с описанием функций  
+
+
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{authentication_8h_aba6db1cbfa09319993052e77f60b8427}{my\+\_\+conv}} (int num\+\_\+msg, const struct pam\+\_\+message $\ast$$\ast$msg, struct pam\+\_\+response $\ast$$\ast$resp, void $\ast$appdata\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Функция общения с PAM. Эта функция используется для передачи ответов от приложения к модулю PAM. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{authentication_8h_ade1584ef81657ace5210be271ef57588}{authenticate}} (const char $\ast$username, char $\ast$password)
+\begin{DoxyCompactList}\small\item\em Функция аутентификации с PAM. Эта функция используется для проверки имени пользователя и пароля с помощью модуля PAM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл с описанием функций 
+
+Данный файл содержит в себе определение основных функций, используемых для работы с PAM. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{authentication_8h_ade1584ef81657ace5210be271ef57588}\label{authentication_8h_ade1584ef81657ace5210be271ef57588}} 
+\index{authentication.h@{authentication.h}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!authentication.h@{authentication.h}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily int authenticate (\begin{DoxyParamCaption}\item[{const char $\ast$}]{username,  }\item[{char $\ast$}]{password }\end{DoxyParamCaption})}
+
+
+
+Функция аутентификации с PAM. Эта функция используется для проверки имени пользователя и пароля с помощью модуля PAM. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em username} & Указатель на строку, содержащую имя пользователя. \\
+\hline
+\mbox{\texttt{ in}}  & {\em password} & Указатель на строку, содержащую пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код возврата PAM. Возвращает PAM\+\_\+\+SUCCESS, если аутентификация успешна, иначе возвращает другой код ошибки PAM. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{authentication_8h_aba6db1cbfa09319993052e77f60b8427}\label{authentication_8h_aba6db1cbfa09319993052e77f60b8427}} 
+\index{authentication.h@{authentication.h}!my\_conv@{my\_conv}}
+\index{my\_conv@{my\_conv}!authentication.h@{authentication.h}}
+\doxysubsubsection{\texorpdfstring{my\_conv()}{my\_conv()}}
+{\footnotesize\ttfamily int my\+\_\+conv (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+msg,  }\item[{const struct pam\+\_\+message $\ast$$\ast$}]{msg,  }\item[{struct pam\+\_\+response $\ast$$\ast$}]{resp,  }\item[{void $\ast$}]{appdata\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Функция общения с PAM. Эта функция используется для передачи ответов от приложения к модулю PAM. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em num\+\_\+msg} & Количество сообщений, переданных модулем PAM. \\
+\hline
+\mbox{\texttt{ in}}  & {\em num\+\_\+msg} & Количество сообщений, переданных модулем PAM. \\
+\hline
+\mbox{\texttt{ in}}  & {\em msg} & Указатель на массив указателей на структуры pam\+\_\+message, содержащие сообщения от модуля PAM. \\
+\hline
+\mbox{\texttt{ in}}  & {\em resp} & Указатель на указатель на массив структур pam\+\_\+response, в котором функция должна выделить память и сохранить ответы от приложения. \\
+\hline
+\mbox{\texttt{ in}}  & {\em appdata\+\_\+ptr} & Указатель на данные, переданные приложением через структуру pam\+\_\+conv. В данном случае он не используется и равен NULL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код возврата PAM. В данном случае всегда возвращает PAM\+\_\+\+SUCCESS. 
+\end{DoxyReturn}

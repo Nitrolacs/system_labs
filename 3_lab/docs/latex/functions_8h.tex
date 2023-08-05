@@ -1,0 +1,243 @@
+\hypertarget{functions_8h}{}\doxysection{Файл functions.\+h}
+\label{functions_8h}\index{functions.h@{functions.h}}
+
+
+Заголовочный файл с описанием функций  
+
+
+{\ttfamily \#include \char`\"{}structure.\+h\char`\"{}}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{functions_8h_adb6f8df9cf675626c25e365e275394f2}\label{functions_8h_adb6f8df9cf675626c25e365e275394f2}} 
+void {\bfseries Print\+Menu} (void)
+\begin{DoxyCompactList}\small\item\em Выводит меню программы \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{functions_8h_ae19f21a0f9d6efc4fce9ca032db9b06c}\label{functions_8h_ae19f21a0f9d6efc4fce9ca032db9b06c}} 
+void {\bfseries Print\+Changing\+Menu} (void)
+\begin{DoxyCompactList}\small\item\em Выводит меню изменения параметров \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{functions_8h_a07291511581ae8c7352600c3af2e1756}{Checking\+Input}} (int lower\+Bound, int count)
+\begin{DoxyCompactList}\small\item\em Считывает из консоли одно целое число \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{functions_8h_a88cb52a97a0ac0ce6741f5651a9492ae}{String\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em Функция ввода строки \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{functions_8h_a353267dea8a89fc556d51baf6cc11880}{Float\+Input}} (void)
+\begin{DoxyCompactList}\small\item\em Функция ввода числа с плавающей точкой \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} $\ast$ \mbox{\hyperlink{functions_8h_ab03b6fde911f557a109acecd6039b1eb}{Create\+Node}} (\mbox{\hyperlink{struct_enterprise}{Enterprise}} data)
+\begin{DoxyCompactList}\small\item\em Создание элемента \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_a011b169f018931c67253aa693fe0511c}{Add\+Node}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$$\ast$head, \mbox{\hyperlink{struct_enterprise}{Enterprise}} data)
+\begin{DoxyCompactList}\small\item\em Функция добавления элемента в начало списка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_aa4af8f70c1848ad1bb01fa372a7ebdd2}{Update\+Node}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$head, int count\+Enterprises)
+\begin{DoxyCompactList}\small\item\em Функция для модификации элемента списка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_a84bf61f2171f3c79f8e96a4b09fe7222}{Delete\+Node}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$$\ast$head, int $\ast$count\+Enterprises)
+\begin{DoxyCompactList}\small\item\em Функция для удаления элемента списка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_ab85c1547933f77e88fdfc8532fc5b1e7}{Print\+Node}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$head, int count\+Enterprises)
+\begin{DoxyCompactList}\small\item\em Функция для чтения элемента списка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_a5b777fab758b0a0e4d27a66097820dfa}{Print\+List}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$head, int count\+Enterprises)
+\begin{DoxyCompactList}\small\item\em Функция для отображения содержимого списка \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_a1d99b6cb11ce81d082915bbaaf1161b7}{Find\+Best\+Ratio}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$head)
+\begin{DoxyCompactList}\small\item\em Функция для нахождения списка предприятий с наилучшим соотношением \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_a1f4edc13a954e649fec812df4e40be00}{Find\+Price\+Range}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$head)
+\begin{DoxyCompactList}\small\item\em Функция для нахождения диапазона цен \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_af3183dec7d50010ee05c9c03574ccd40}{Free\+List}} (\mbox{\hyperlink{struct_node}{Node}} $\ast$$\ast$head)
+\begin{DoxyCompactList}\small\item\em Функция для освобождения памяти списка \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл с описанием функций 
+
+Данный файл содержит в себе определения основных функций, используемых в программе. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{functions_8h_a011b169f018931c67253aa693fe0511c}\label{functions_8h_a011b169f018931c67253aa693fe0511c}} 
+\index{functions.h@{functions.h}!AddNode@{AddNode}}
+\index{AddNode@{AddNode}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{AddNode()}{AddNode()}}
+{\footnotesize\ttfamily void Add\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$$\ast$}]{head,  }\item[{\mbox{\hyperlink{struct_enterprise}{Enterprise}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Функция добавления элемента в начало списка 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & Данные для создания \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8h_a07291511581ae8c7352600c3af2e1756}\label{functions_8h_a07291511581ae8c7352600c3af2e1756}} 
+\index{functions.h@{functions.h}!CheckingInput@{CheckingInput}}
+\index{CheckingInput@{CheckingInput}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{CheckingInput()}{CheckingInput()}}
+{\footnotesize\ttfamily int Checking\+Input (\begin{DoxyParamCaption}\item[{int}]{lower\+Bound,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Считывает из консоли одно целое число 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em lower\+Bound} & Нижняя граница чисел \\
+\hline
+\mbox{\texttt{ in}}  & {\em count} & Верхняя граница чисел \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Считанное число 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8h_ab03b6fde911f557a109acecd6039b1eb}\label{functions_8h_ab03b6fde911f557a109acecd6039b1eb}} 
+\index{functions.h@{functions.h}!CreateNode@{CreateNode}}
+\index{CreateNode@{CreateNode}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{CreateNode()}{CreateNode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} $\ast$ Create\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_enterprise}{Enterprise}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Создание элемента 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em data} & Данные для создания \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Созданный элемент 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8h_a84bf61f2171f3c79f8e96a4b09fe7222}\label{functions_8h_a84bf61f2171f3c79f8e96a4b09fe7222}} 
+\index{functions.h@{functions.h}!DeleteNode@{DeleteNode}}
+\index{DeleteNode@{DeleteNode}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{DeleteNode()}{DeleteNode()}}
+{\footnotesize\ttfamily void Delete\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$$\ast$}]{head,  }\item[{int $\ast$}]{count\+Enterprises }\end{DoxyParamCaption})}
+
+
+
+Функция для удаления элемента списка 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\mbox{\texttt{ in}}  & {\em count\+Enterprises} & Количество элементов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8h_a1d99b6cb11ce81d082915bbaaf1161b7}\label{functions_8h_a1d99b6cb11ce81d082915bbaaf1161b7}} 
+\index{functions.h@{functions.h}!FindBestRatio@{FindBestRatio}}
+\index{FindBestRatio@{FindBestRatio}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{FindBestRatio()}{FindBestRatio()}}
+{\footnotesize\ttfamily void Find\+Best\+Ratio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$}]{head }\end{DoxyParamCaption})}
+
+
+
+Функция для нахождения списка предприятий с наилучшим соотношением 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8h_a1f4edc13a954e649fec812df4e40be00}\label{functions_8h_a1f4edc13a954e649fec812df4e40be00}} 
+\index{functions.h@{functions.h}!FindPriceRange@{FindPriceRange}}
+\index{FindPriceRange@{FindPriceRange}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{FindPriceRange()}{FindPriceRange()}}
+{\footnotesize\ttfamily void Find\+Price\+Range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$}]{head }\end{DoxyParamCaption})}
+
+
+
+Функция для нахождения диапазона цен 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8h_a353267dea8a89fc556d51baf6cc11880}\label{functions_8h_a353267dea8a89fc556d51baf6cc11880}} 
+\index{functions.h@{functions.h}!FloatInput@{FloatInput}}
+\index{FloatInput@{FloatInput}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{FloatInput()}{FloatInput()}}
+{\footnotesize\ttfamily float Float\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция ввода числа с плавающей точкой 
+
+\begin{DoxyReturn}{Возвращает}
+Введённое пользователем число 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8h_af3183dec7d50010ee05c9c03574ccd40}\label{functions_8h_af3183dec7d50010ee05c9c03574ccd40}} 
+\index{functions.h@{functions.h}!FreeList@{FreeList}}
+\index{FreeList@{FreeList}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{FreeList()}{FreeList()}}
+{\footnotesize\ttfamily void Free\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$$\ast$}]{head }\end{DoxyParamCaption})}
+
+
+
+Функция для освобождения памяти списка 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8h_a5b777fab758b0a0e4d27a66097820dfa}\label{functions_8h_a5b777fab758b0a0e4d27a66097820dfa}} 
+\index{functions.h@{functions.h}!PrintList@{PrintList}}
+\index{PrintList@{PrintList}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{PrintList()}{PrintList()}}
+{\footnotesize\ttfamily void Print\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$}]{head,  }\item[{int}]{count\+Enterprises }\end{DoxyParamCaption})}
+
+
+
+Функция для отображения содержимого списка 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\mbox{\texttt{ in}}  & {\em count\+Enterprises} & Количество элементов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8h_ab85c1547933f77e88fdfc8532fc5b1e7}\label{functions_8h_ab85c1547933f77e88fdfc8532fc5b1e7}} 
+\index{functions.h@{functions.h}!PrintNode@{PrintNode}}
+\index{PrintNode@{PrintNode}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{PrintNode()}{PrintNode()}}
+{\footnotesize\ttfamily void Print\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$}]{head,  }\item[{int}]{count\+Enterprises }\end{DoxyParamCaption})}
+
+
+
+Функция для чтения элемента списка 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\mbox{\texttt{ in}}  & {\em count\+Enterprises} & Количество элементов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{functions_8h_a88cb52a97a0ac0ce6741f5651a9492ae}\label{functions_8h_a88cb52a97a0ac0ce6741f5651a9492ae}} 
+\index{functions.h@{functions.h}!StringInput@{StringInput}}
+\index{StringInput@{StringInput}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{StringInput()}{StringInput()}}
+{\footnotesize\ttfamily char $\ast$ String\+Input (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Функция ввода строки 
+
+\begin{DoxyReturn}{Возвращает}
+Введённая пользователем строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8h_aa4af8f70c1848ad1bb01fa372a7ebdd2}\label{functions_8h_aa4af8f70c1848ad1bb01fa372a7ebdd2}} 
+\index{functions.h@{functions.h}!UpdateNode@{UpdateNode}}
+\index{UpdateNode@{UpdateNode}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{UpdateNode()}{UpdateNode()}}
+{\footnotesize\ttfamily void Update\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} $\ast$}]{head,  }\item[{int}]{count\+Enterprises }\end{DoxyParamCaption})}
+
+
+
+Функция для модификации элемента списка 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em head} & Указатель на начало списка \\
+\hline
+\mbox{\texttt{ in}}  & {\em count\+Enterprises} & Количество элементов \\
+\hline
+\end{DoxyParams}

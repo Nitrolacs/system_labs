@@ -1,0 +1,20 @@
+Для сборки программы использовать следующие команды\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{gcc\ main.c\ -\/o\ main\ -\/-\/std=c99}
+\DoxyCodeLine{gcc\ child.c\ -\/lm\ -\/o\ child\ -\/-\/std=c99}
+\DoxyCodeLine{./main}
+
+\end{DoxyCode}
+ Для сборки тестов использовать команду\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{gcc\ unit\_tests.c\ -\/o\ unit\_tests\ -\/lcunit\ -\/lm}
+\DoxyCodeLine{./unit\_tests}
+
+\end{DoxyCode}
+ Для сборки документации использовать команду\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{doxygen}
+\DoxyCodeLine{firefox\ doxygen/html/index.html}
+
+\end{DoxyCode}
+ 

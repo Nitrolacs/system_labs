@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Complex Numbers: Лабораторная работа №1. Управление процессами в OC GNU/Linux</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Complex Numbers<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Работа с комплексными числами</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Лабораторная работа №1. Управление процессами в OC GNU/Linux </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Первая практическая работа по дисциплине Системное программирование </p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Цель работы</h1>
+<p>Изучение особенностей программной реализации многозадачных приложений в ОС GNU/Linux. </p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Задачи</h1>
+<ol type="1">
+<li>Ознакомиться с краткими теоретическими сведениями по управлению процессами в ОС GNU/Linux.</li>
+<li>Получить у преподавателя индивидуальный вариант задания, который предусматривает разработку программы, являющейся дочерним процессом, которая запускается родительским процессом (вторая разрабатываемая программа) с обязательным использованием концепции fork-and-exec.</li>
+<li>Произвести разработку юнит-тестов основных функциональных блоков код дочернего процесса. Рекомендуется использование фреймворка CUnit, но студент по согласованию с преподавателем вправе воспользоваться альтернативными решениями (в качестве такового не будет рассматриваться исключительное использование стандартного макроса assert).</li>
+<li>Используя изученные механизмы, разработать и отладить программный код для родительского и дочернего процессов.</li>
+<li>Составить общее описание результатов, инструкции по сборке и использованию программ, а также инструкцию по получению документации, сформировать архив формата tar.gz и представить на проверку с исходными текстами программы. Внимание: исходные тексты программ должны соответствовать принятому стандарту кодирования, а также содержать комментарии в стиле системы doxygen. включать юнит-тесты основных функциональных блоков (функций и/или процедур) программного кода дочернего процесса. </li>
+</ol>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Вариант задания</h1>
+<p>Работа выполнена в соответствии с вариантом 21. Описание варианта: Программа принимает от пользователя две или три строки. При вводе трех строк первая и третья – это комплексные числа1 вида «±1.2.±i5.4» (моделируется программно двумя вещественными и/или целыми числами), причем первый знак необязателен, вторая строка – это знак операции вида «+», «-», «*», «/». При вводе двух строк первая — комплексное число, вторая — операция, обозначенная литерами S (комплексно-сопряженное число), R (вещественная часть), I (мнимая часть). Затем программа выполняет требуемую операцию с полученными операндами, и выводит результат на экран. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

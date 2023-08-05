@@ -1,0 +1,91 @@
+\hypertarget{interface_8h}{}\doxysection{Файл interface.\+h}
+\label{interface_8h}\index{interface.h@{interface.h}}
+
+
+Заголовочный файл с описанием функций  
+
+
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_8h_a653bb6fcebf5ec0f438c7c14b5b61c73}{Print\+Client\+Help}} (void)
+\begin{DoxyCompactList}\small\item\em Выводит справку об использовании клиента. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_8h_ac300f0ec5d190d3eebe418b08e22ba5a}\label{interface_8h_ac300f0ec5d190d3eebe418b08e22ba5a}} 
+void {\bfseries Print\+Server\+Help} (void)
+\begin{DoxyCompactList}\small\item\em Выводит справку об использовании сервера. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{interface_8h_a2fca57bc6a1a55b602f1516e95e0fcdd}{Parse\+Args\+Client}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, char $\ast$$\ast$log\+File, int $\ast$timeout, double $\ast$a, double $\ast$b, double $\ast$c, double $\ast$d)
+\begin{DoxyCompactList}\small\item\em Разбирает аргументы командной строки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_8h_a245b690e0319f33100bf5cc74967247b}{parse\+Args\+Server}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]}, char $\ast$$\ast$log\+File, int $\ast$timeout)
+\begin{DoxyCompactList}\small\item\em Разбирает аргументы командной строки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл с описанием функций 
+
+Данный файл содержит в себе определение основных функций, используемых для обработки параметров командной строки (CLI). 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{interface_8h_a2fca57bc6a1a55b602f1516e95e0fcdd}\label{interface_8h_a2fca57bc6a1a55b602f1516e95e0fcdd}} 
+\index{interface.h@{interface.h}!ParseArgsClient@{ParseArgsClient}}
+\index{ParseArgsClient@{ParseArgsClient}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{ParseArgsClient()}{ParseArgsClient()}}
+{\footnotesize\ttfamily int Parse\+Args\+Client (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$$\ast$}]{log\+File,  }\item[{int $\ast$}]{timeout,  }\item[{double $\ast$}]{a,  }\item[{double $\ast$}]{b,  }\item[{double $\ast$}]{c,  }\item[{double $\ast$}]{d }\end{DoxyParamCaption})}
+
+
+
+Разбирает аргументы командной строки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em argc} & Количество аргументов командной строки \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv} & Массив указателей на строки, содержащие аргументы \\
+\hline
+\mbox{\texttt{ in}}  & {\em log\+File} & Указатель на название log файла \\
+\hline
+\mbox{\texttt{ in}}  & {\em log\+File} & Указатель на время ожидания \\
+\hline
+\mbox{\texttt{ in}}  & {\em a} & Указатель на первый коэффициент \\
+\hline
+\mbox{\texttt{ in}}  & {\em b} & Указатель на второй коэффициент \\
+\hline
+\mbox{\texttt{ in}}  & {\em c} & Указатель на третий коэффициент \\
+\hline
+\mbox{\texttt{ in}}  & {\em d} & Указатель на четвёртый коэффициент \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Код ошибки 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_8h_a245b690e0319f33100bf5cc74967247b}\label{interface_8h_a245b690e0319f33100bf5cc74967247b}} 
+\index{interface.h@{interface.h}!parseArgsServer@{parseArgsServer}}
+\index{parseArgsServer@{parseArgsServer}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{parseArgsServer()}{parseArgsServer()}}
+{\footnotesize\ttfamily void parse\+Args\+Server (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$$\ast$}]{log\+File,  }\item[{int $\ast$}]{timeout }\end{DoxyParamCaption})}
+
+
+
+Разбирает аргументы командной строки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em argc} & Количество аргументов командной строки \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv} & Массив указателей на строки, содержащие аргументы \\
+\hline
+\mbox{\texttt{ in}}  & {\em log\+File} & Указатель на название log файла \\
+\hline
+\mbox{\texttt{ in}}  & {\em log\+File} & Указатель на время ожидания \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_8h_a653bb6fcebf5ec0f438c7c14b5b61c73}\label{interface_8h_a653bb6fcebf5ec0f438c7c14b5b61c73}} 
+\index{interface.h@{interface.h}!PrintClientHelp@{PrintClientHelp}}
+\index{PrintClientHelp@{PrintClientHelp}!interface.h@{interface.h}}
+\doxysubsubsection{\texorpdfstring{PrintClientHelp()}{PrintClientHelp()}}
+{\footnotesize\ttfamily void Print\+Client\+Help (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Выводит справку об использовании клиента. 
+
+Функции интерфейса CLI 

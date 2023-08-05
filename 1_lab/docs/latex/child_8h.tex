@@ -1,0 +1,219 @@
+\hypertarget{child_8h}{}\doxysection{Файл C\+:/\+VM\+\_\+\+EXCHANGE/system\+\_\+programming/1\+\_\+lab/child.h}
+\label{child_8h}\index{C:/VM\_EXCHANGE/system\_programming/1\_lab/child.h@{C:/VM\_EXCHANGE/system\_programming/1\_lab/child.h}}
+
+
+Заголовочный файл с описанием функций  
+
+
+{\ttfamily \#include \char`\"{}structure.\+h\char`\"{}}\newline
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{child_8h_ab4425e3fc0e97bb8cbd8a985bd2b657a}{String\+Input}} (int $\ast$string\+Size)
+\begin{DoxyCompactList}\small\item\em Функция ввода строки \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{child_8h_a7fcc6207c2f90fab17764a594c109cc1}{concatenate}} (const char $\ast$first\+Str, const char $\ast$second\+Str, const char $\ast$third\+Str)
+\begin{DoxyCompactList}\small\item\em Объединяет три строки в одну \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{child_8h_adc99b12adcb3e216240767b3d12e3f52}{Complex\+Number\+Input}} (char $\ast$$\ast$user\+Str, int $\ast$str\+Size, \mbox{\hyperlink{structcomplex}{complex}} $\ast$cmp\+Number)
+\begin{DoxyCompactList}\small\item\em Ввод комплексного числа \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{child_8h_a3b3bfebf0f2d151091c9a28626ce5b1c}{Check\+Operation}} (char $\ast$user\+Str, int user\+Choice)
+\begin{DoxyCompactList}\small\item\em Получает операнд \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{child_8h_a46b50750e6ef9ef0d74d3e272be84e28}{Row\+Filling}} (char $\ast$$\ast$first\+User\+Str, int $\ast$first\+Str\+Size, char $\ast$second\+User\+Str, char $\ast$$\ast$third\+User\+Str, int $\ast$third\+Str\+Size, int user\+Choice, \mbox{\hyperlink{structcomplex}{complex}} $\ast$first\+Number, \mbox{\hyperlink{structcomplex}{complex}} $\ast$second\+Number)
+\begin{DoxyCompactList}\small\item\em Заполненяет строки \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{child_8h_a37f3c4010a738efd2d8c3ff4b06f3834}{Three\+String\+Operation}} (\mbox{\hyperlink{structcomplex}{complex}} first\+Number, char operation, \mbox{\hyperlink{structcomplex}{complex}} second\+Number, \mbox{\hyperlink{structcomplex}{complex}} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Операции с тремя строками \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{child_8h_a1ff07e48c4427b48211bdf440c75f22a}{Two\+String\+Operation}} (\mbox{\hyperlink{structcomplex}{complex}} number, char operation, \mbox{\hyperlink{structcomplex}{complex}} $\ast$result)
+\begin{DoxyCompactList}\small\item\em Операции с двумя строками \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{child_8h_a57a02d7d795326f9d13e99da5d3d7362}{Checking\+Input}} (const char message\mbox{[}$\,$\mbox{]}, int lower\+Bound, int count)
+\begin{DoxyCompactList}\small\item\em Считывает из консоли одно целое число \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{child_8h_adb6f8df9cf675626c25e365e275394f2}\label{child_8h_adb6f8df9cf675626c25e365e275394f2}} 
+void {\bfseries Print\+Menu} (void)
+\begin{DoxyCompactList}\small\item\em Выводит меню программы \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{child_8h_a840291bc02cba5474a4cb46a9b9566fe}{main}} (void)
+\begin{DoxyCompactList}\small\item\em Точка входа в программу \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Заголовочный файл с описанием функций 
+
+Данный файл содержит в себе определения основных функций, используемых в программе. 
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{child_8h_a57a02d7d795326f9d13e99da5d3d7362}\label{child_8h_a57a02d7d795326f9d13e99da5d3d7362}} 
+\index{child.h@{child.h}!CheckingInput@{CheckingInput}}
+\index{CheckingInput@{CheckingInput}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{CheckingInput()}{CheckingInput()}}
+{\footnotesize\ttfamily int Checking\+Input (\begin{DoxyParamCaption}\item[{const char}]{message\mbox{[}$\,$\mbox{]},  }\item[{int}]{lower\+Bound,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Считывает из консоли одно целое число 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em message} & Выводимое сообщение \\
+\hline
+\mbox{\texttt{ in}}  & {\em lower\+Bound} & Нижняя граница чисел \\
+\hline
+\mbox{\texttt{ in}}  & {\em count} & Верхняя граница чисел \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Считанное число 
+\end{DoxyReturn}
+\mbox{\Hypertarget{child_8h_a3b3bfebf0f2d151091c9a28626ce5b1c}\label{child_8h_a3b3bfebf0f2d151091c9a28626ce5b1c}} 
+\index{child.h@{child.h}!CheckOperation@{CheckOperation}}
+\index{CheckOperation@{CheckOperation}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{CheckOperation()}{CheckOperation()}}
+{\footnotesize\ttfamily void Check\+Operation (\begin{DoxyParamCaption}\item[{char $\ast$}]{user\+Str,  }\item[{int}]{user\+Choice }\end{DoxyParamCaption})}
+
+
+
+Получает операнд 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em user\+Str} & Считанная строка \\
+\hline
+\mbox{\texttt{ in}}  & {\em user\+Choice} & Выбор пользователя \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{child_8h_adc99b12adcb3e216240767b3d12e3f52}\label{child_8h_adc99b12adcb3e216240767b3d12e3f52}} 
+\index{child.h@{child.h}!ComplexNumberInput@{ComplexNumberInput}}
+\index{ComplexNumberInput@{ComplexNumberInput}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{ComplexNumberInput()}{ComplexNumberInput()}}
+{\footnotesize\ttfamily void Complex\+Number\+Input (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{user\+Str,  }\item[{int $\ast$}]{str\+Size,  }\item[{\mbox{\hyperlink{structcomplex}{complex}} $\ast$}]{cmp\+Number }\end{DoxyParamCaption})}
+
+
+
+Ввод комплексного числа 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em user\+Str} & Считанная строка \\
+\hline
+\mbox{\texttt{ out}}  & {\em str\+Size} & Размер считанной строки \\
+\hline
+\mbox{\texttt{ out}}  & {\em cmp\+Number} & Полученное комплексное число \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{child_8h_a7fcc6207c2f90fab17764a594c109cc1}\label{child_8h_a7fcc6207c2f90fab17764a594c109cc1}} 
+\index{child.h@{child.h}!concatenate@{concatenate}}
+\index{concatenate@{concatenate}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{concatenate()}{concatenate()}}
+{\footnotesize\ttfamily char $\ast$ concatenate (\begin{DoxyParamCaption}\item[{const char $\ast$}]{first\+Str,  }\item[{const char $\ast$}]{second\+Str,  }\item[{const char $\ast$}]{third\+Str }\end{DoxyParamCaption})}
+
+
+
+Объединяет три строки в одну 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em first\+Str} & Первая строка \\
+\hline
+\mbox{\texttt{ in}}  & {\em second\+Str} & Вторая строка \\
+\hline
+\mbox{\texttt{ in}}  & {\em third\+Str} & Третья строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка, составленная из трёх строк 
+\end{DoxyReturn}
+\mbox{\Hypertarget{child_8h_a840291bc02cba5474a4cb46a9b9566fe}\label{child_8h_a840291bc02cba5474a4cb46a9b9566fe}} 
+\index{child.h@{child.h}!main@{main}}
+\index{main@{main}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Точка входа в программу 
+
+\begin{DoxyReturn}{Возвращает}
+Код завершения
+\end{DoxyReturn}
+Основная точка входа программы \begin{DoxyReturn}{Возвращает}
+Код завершения программы
+\end{DoxyReturn}
+Точка входа в программу \mbox{\Hypertarget{child_8h_a46b50750e6ef9ef0d74d3e272be84e28}\label{child_8h_a46b50750e6ef9ef0d74d3e272be84e28}} 
+\index{child.h@{child.h}!RowFilling@{RowFilling}}
+\index{RowFilling@{RowFilling}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{RowFilling()}{RowFilling()}}
+{\footnotesize\ttfamily void Row\+Filling (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{first\+User\+Str,  }\item[{int $\ast$}]{first\+Str\+Size,  }\item[{char $\ast$}]{second\+User\+Str,  }\item[{char $\ast$$\ast$}]{third\+User\+Str,  }\item[{int $\ast$}]{third\+Str\+Size,  }\item[{int}]{user\+Choice,  }\item[{\mbox{\hyperlink{structcomplex}{complex}} $\ast$}]{first\+Number,  }\item[{\mbox{\hyperlink{structcomplex}{complex}} $\ast$}]{second\+Number }\end{DoxyParamCaption})}
+
+
+
+Заполненяет строки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em first\+User\+Str} & Первая считанная строка \\
+\hline
+\mbox{\texttt{ out}}  & {\em first\+Str\+Size} & Размер первой строки \\
+\hline
+\mbox{\texttt{ out}}  & {\em second\+User\+Str} & Вторая считанная строка \\
+\hline
+\mbox{\texttt{ out}}  & {\em third\+User\+Str} & Третья считанная строка \\
+\hline
+\mbox{\texttt{ out}}  & {\em third\+Str\+Size} & Размер третьей строки \\
+\hline
+\mbox{\texttt{ in}}  & {\em user\+Choice} & Выбор пользователя \\
+\hline
+\mbox{\texttt{ out}}  & {\em first\+Number} & Первое комплексное число \\
+\hline
+\mbox{\texttt{ out}}  & {\em second\+Number} & Второе комплексное число \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{child_8h_ab4425e3fc0e97bb8cbd8a985bd2b657a}\label{child_8h_ab4425e3fc0e97bb8cbd8a985bd2b657a}} 
+\index{child.h@{child.h}!StringInput@{StringInput}}
+\index{StringInput@{StringInput}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{StringInput()}{StringInput()}}
+{\footnotesize\ttfamily char $\ast$ String\+Input (\begin{DoxyParamCaption}\item[{int $\ast$}]{string\+Size }\end{DoxyParamCaption})}
+
+
+
+Функция ввода строки 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ out}}  & {\em string\+Size} & Полученная длина строки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Введённая пользователем строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{child_8h_a37f3c4010a738efd2d8c3ff4b06f3834}\label{child_8h_a37f3c4010a738efd2d8c3ff4b06f3834}} 
+\index{child.h@{child.h}!ThreeStringOperation@{ThreeStringOperation}}
+\index{ThreeStringOperation@{ThreeStringOperation}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{ThreeStringOperation()}{ThreeStringOperation()}}
+{\footnotesize\ttfamily void Three\+String\+Operation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplex}{complex}}}]{first\+Number,  }\item[{char}]{operation,  }\item[{\mbox{\hyperlink{structcomplex}{complex}}}]{second\+Number,  }\item[{\mbox{\hyperlink{structcomplex}{complex}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Операции с тремя строками 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em first\+Number} & Первое комплексное число \\
+\hline
+\mbox{\texttt{ in}}  & {\em operation} & Операнд \\
+\hline
+\mbox{\texttt{ in}}  & {\em second\+Number} & Второе комплексное число \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{child_8h_a1ff07e48c4427b48211bdf440c75f22a}\label{child_8h_a1ff07e48c4427b48211bdf440c75f22a}} 
+\index{child.h@{child.h}!TwoStringOperation@{TwoStringOperation}}
+\index{TwoStringOperation@{TwoStringOperation}!child.h@{child.h}}
+\doxysubsubsection{\texorpdfstring{TwoStringOperation()}{TwoStringOperation()}}
+{\footnotesize\ttfamily void Two\+String\+Operation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcomplex}{complex}}}]{number,  }\item[{char}]{operation,  }\item[{\mbox{\hyperlink{structcomplex}{complex}} $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Операции с двумя строками 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em number} & Комплексное число \\
+\hline
+\mbox{\texttt{ in}}  & {\em operation} & Операнд \\
+\hline
+\end{DoxyParams}

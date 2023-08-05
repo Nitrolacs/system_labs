@@ -1,0 +1,48 @@
+Все команды от имени суперпользователя
+
+Создаём директории для хранения виртуальных дисков
+mkdir -p /mnt/vfs1
+mkdir -p /mnt/vfs2
+
+Создаём файлы для виртуальных дисков размером 100 МБ
+dd if=/dev/zero of=vfs1.img bs=1M count=100
+dd if=/dev/zero of=vfs2.img bs=1M count=100
+
+Создаём файловую систему ext4 на виртуальном диске
+mkfs.ext4 vfs1.img 
+mkfs.ext4 vfs2.img 
+
+Монтируем виртуальные диски в директории vfs1 и vfs2
+mount -o loop vfs1.img /mnt/vfs1
+mount -o loop vfs2.img /mnt/vfs2
+
+Копируем программы в директории
+cp ./server.c /mnt/vfs1
+cp ./client.c /mnt/vfs2
+
+Переходим в нужную директорию
+cd /mnt/vfs1
+cd /mnt/vfs2 rmgfgf
+
+Компилируем программы
+
+Запускаем программы
+./client
+./server
+
+Возвращаемся в корневую директорию
+cd /
+
+Размонтируем виртуальные диски с помощью команды umount и удаляем директорию для хранения виртуальных дисков с помощью команды rm -rf.
+umount /mnt/vfs1
+umount /mnt/vfs2
+
+Удаляем файлы виртуальных дисков и директорию vfs
+rm -f vfs1.img
+rm -f vfs2.img
+
+rm -rf /mnt/vfs1
+rm -rf /mnt/vfs2
+
+
+
